@@ -1,0 +1,43 @@
+CYBER SECURITY INTERNSHIP - TASK 1
+Task: Scan Local Network for Open Ports
+
+Date: 27 Aug 2026
+Time: 7:53 PM
+Tool Used: Nmap Online (hackertarget.com) - Free Version
+Target Scanned: scanme.nmap.org (45.33.32.156) - Official Nmap Test Server
+Command Equivalent: nmap -sS -sV scanme.nmap.org
+
+Why this target?
+I am on Mobile Data (Jio 4G - VoLTE), no WiFi. Local IP 127.0.0.1 cannot be scanned by external scanners. As per Technology Flexibility rule, I used official allowed test server scanme.nmap.org
+
+--- NMAP OUTPUT (From Screenshot) ---
+Starting Nmap 7.80 ( https://nmap.org ) at 2026-08-27 02:22 UTC
+Nmap scan report for 45.33.32.156
+Host is up (0.069s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+80/tcp   open   http
+110/tcp  closed pop3
+143/tcp  closed imap
+443/tcp  closed https
+3389/tcp closed ms-wbt-server
+
+Nmap done: 1 IP address (1 host up) scanned in 0.13 seconds
+
+--- ANALYSIS ---
+Open Ports Found: 2
+
+1. 22/tcp open ssh - Secure Shell service is running
+   Risk: Brute-force attack, unauthorized remote login if weak password
+   Mitigation: Use key-based auth, change default port, use strong password
+
+2. 80/tcp open http - Web server is running
+   Risk: Web vulnerabilities, outdated server info disclosure
+   Mitigation: Update server, use HTTPS (443), firewall rules
+
+Closed Ports (21,23,110,143,443,3389) - Good security, these services not exposed.
+
+Outcome: Learned to identify network exposure using Nmap SYN scan concept.
