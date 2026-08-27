@@ -13,3 +13,12 @@ for port in ports:
     else:
         print(f"Port {port}: CLOSED")
     s.close()
+
+#out put
+Scanning 127.0.0.1...
+Port 53: OPEN
+Port 80: CLOSED
+Port 443: CLOSED
+Port 22: CLOSED
+Port 21: CLOSED
+Port 8080: CLOSED
