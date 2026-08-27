@@ -87,7 +87,7 @@ Learn to discover open ports on devices connected to your local network to under
 - Tested Target: scanme.nmap.org (Allowed by Nmap.org for testing)
 
 ## Why I used scanme.nmap.org?
-As per internship guidelines, I am on Mobile Data (Jio 4G). I don't have WiFi router to scan 192.168.1.0/24. External online scanners cannot scan private IP 127.0.0.1. So as per "Technology Flexibility" rule, I used the official public test server provided by Nmap.
+As per internship guidelines, I am on Mobile Data (airtel 4G). I don't have WiFi router to scan 192.168.1.0/24. External online scanners cannot scan private IP 127.0.0.1. So as per "Technology Flexibility" rule, I used the official public test server provided by Nmap.
 
 ## Steps Followed
 1. Tried scanning 127.0.0.1 on hackertarget.com - Got error "IP address or host name only" (screenshot 1)
@@ -96,18 +96,5 @@ As per internship guidelines, I am on Mobile Data (Jio 4G). I don't have WiFi ro
 4. Got results showing 2 open ports
 5. Analyzed security risks
 
-## Key Learnings
-- What is TCP SYN scan: Stealth scan that doesn't complete full connection
-- Difference between open vs closed ports
-- How open ports can be entry points for attackers
 
-## Interview Q&A (For Practice)
-Q1. What is open port? - A door for data to enter.
-Q2. Nmap SYN scan? - Knock and check without fully opening door.
-Q3. Risk of open ports? - Hackers can enter.
 
-## Screenshots
-Added screenshots of scan attempts.
-
-## Submission
-Task completed on time - 27 Aug 2026, 7:53 PM
