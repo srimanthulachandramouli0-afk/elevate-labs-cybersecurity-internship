@@ -171,3 +171,27 @@ To verify if the internship offer was genuine, I checked the email's original he
 - Domain matches, so it's verified as original and not spoofed.
 
 I will give the screenshot above[unstop.jpg]
+
+#Google-support-phishing_email_sample Example
+┌────────────────────────────────────────────────────────────────────────┐
+│ FROM: Google Security <security-alert@g00gle-support.net> ◄── [1. Spoofed Domain]
+│ TO: user@gmail.com                                                     │
+│ SUBJECT: CRITICAL SECURITY ALERT: Action Required! ◄── [2. Urgent/Fear Tone]
+├────────────────────────────────────────────────────────────────────────┤
+│ Dear User,                                                             │
+│                                                                        │
+│ Someone just tried to log into your Google Account from Moscow, Russia.│
+│ If this wasn't you, please change your password immediately to prevent │
+│ total account termination within 12 hours.                             │
+│                                                                        │
+│ ┌─────────────────┐                                                    │
+│ │ SECURE ACCOUNT ─┼─────────────────────────────────┐                  │
+│ └─────────────────┘                                 │                  │
+│                                                     ▼                  │
+│                             [Actual Link: http://login-google-alert.tk]
+│                             ◄── [3. Mismatched URL / Phishing Link]    │
+│                                                                        │
+│ Sincerely,                                                             │
+│ Googel Security Team       ◄── [4. Spelling Error: "Googel"]           │
+└────────────────────────────────────────────────────────────────────────┘
+
