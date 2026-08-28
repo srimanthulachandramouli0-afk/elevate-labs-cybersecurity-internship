@@ -146,7 +146,7 @@ This email contains all major phishing traits: Spoofed Sender, Header FAIL, Fake
 
 ### Example 1: Legitimate Email (Unstop)
 - SPF: PASS, DKIM: PASS, DMARC: PASS
-- Screenshot: [Your 2nd image]
+- Screenshot: [UNSTOP screenshot]
 - Conclusion: This is a safe email.
 
 ### Example 2: Phishing Email (Simulated Sample)
@@ -154,7 +154,7 @@ If we analyze the phishing sample `security-alert@micorsoft-support.com`:
 - SPF: FAIL (Not from Microsoft servers)
 - DKIM: FAIL
 - DMARC: FAIL
-- Screenshot: [If this were phishing, it would show RED FAIL]
+- Screenshot: [If this were phishing, it would show RED FAIL EXAMPLEscreenshot].
 - Conclusion: This is SPOOFED / Phishing.
 
 This comparison proves how to differentiate Real vs Phishing email using Google Admin Toolbox.
