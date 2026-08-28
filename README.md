@@ -158,3 +158,16 @@ If we analyze the phishing sample `security-alert@micorsoft-support.com`:
 - Conclusion: This is SPOOFED / Phishing.
 
 This comparison proves how to differentiate Real vs Phishing email using Google Admin Toolbox.
+## 🔍 Email Header Verification
+
+To verify if the internship offer was genuine, I checked the email's original header in Gmail (⋮ > Show original) and analyzed it with Google Admin Toolbox > Messageheader.
+
+### Example: Genuine Mail (Unstop)
+
+**Observations from the screenshot:**
+- **From:** `updates@unstop.email`
+- **SPF:** PASS | **DKIM:** PASS with domain `unstop.email` | **DMARC:** PASS
+- **Delivered after 1 second** via `amazonses.com` (Amazon SES - used by legit companies for bulk emails)
+- Domain matches, so it's verified as original and not spoofed.
+
+I will give the screenshot above[unstop.jpg]
