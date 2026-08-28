@@ -1,0 +1,22 @@
+From: "Microsoft Security Alert" <security-alert@micorsoft-support.com>
+To: srimanthula.sukanya@gmail.com
+Subject: URGENT: Your Account Will Be Suspended in 24 Hours!
+Date: Mon, 27 May 2026
+Reply-To: helpdesk@micorsoft-support.com
+Return-Path: bounce@micorsoft-support.com
+
+Dear Customer,
+
+We have detected unusual login activity on your Microsoft account.
+
+Your account will be SUSPENDED within 24 HOURS if you do not verify your identity immediately.
+
+Click here to secure your account:
+https://microsoft.com.secure-login.verify-account.com/login
+
+Failure to act now will result in permanent loss of access.
+
+Attachment: Invoice_2026.pdf.exe
+
+Thank you,
+Microsoft Support Team
