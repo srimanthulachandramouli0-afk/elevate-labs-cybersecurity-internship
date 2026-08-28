@@ -97,4 +97,47 @@ As per internship guidelines, I am on Mobile Data (airtel 4G). I don't have WiFi
 5. Analyzed security risks
 
 
+# Task 2: Phishing Email Analysis
 
+**Objective:** To identify phishing characteristics in a suspicious email sample.
+
+### 1. Sender's Email Spoofing
+- Official domain should be `microsoft.com` but attacker used `micorsoft-support.com` (missing 'o').
+- This is called Typosquatting.
+- Reply-To is also fake domain.
+
+### 2. Email Header Analysis (using MxToolbox)
+- SPF: FAIL - Email not sent from Microsoft's authorized server.
+- DKIM: FAIL - Signature not aligned.
+- Return-Path is fake domain.
+- Result: This confirms email spoofing.
+
+### 3. Suspicious Link & Mismatched URL
+- Link text shows microsoft.com but on hovering, real URL is `https://microsoft.com.secure-login.verify-account.com/login`
+- Actual domain is `verify-account.com`, not microsoft.com. This is a credential harvesting link.
+
+### 4. Suspicious Attachment
+- File name: `Invoice_2026.pdf.exe`
+- Double extension used to trick user. .exe is an executable malware file.
+
+### 5. Urgent & Threatening Language (Social Engineering)
+- Subject: "URGENT: Your Account Will Be Suspended in 24 Hours!"
+- Body uses fear: "SUSPENDED within 24 HOURS", "permanent loss".
+- Attacker creates panic so user clicks without thinking.
+
+### 6. Spelling & Grammar Errors
+- Generic greeting "Dear Customer" instead of user name.
+- Unprofessional language for Microsoft.
+
+### 7. Summary of Phishing Traits Found
+This email contains all major phishing traits: Spoofed Sender, Header FAIL, Fake URL, Malicious Attachment, Urgency Tactics, and Spelling Errors.
+
+### 8. Recommended Action
+- Do NOT click link.
+- Do NOT download attachment.
+- Report as Phishing.
+- Delete email.
+
+**Conclusion:** This is a 100% Phishing Email aimed at stealing credentials and installing malware.
+
+**Tools Used:** MxToolbox Header Analyzer, Google Admin Toolbox
