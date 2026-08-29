@@ -1,6 +1,6 @@
 # elevate-labs-cybersecurity-internship
 My 45 Days Cyber Security Internship at Elevate Labs
-Cyber-Securyty task1 port scan 
+Cyber-Security task1 port scan 
 
 # Task 1: Scan Local Network for Open Ports
 Objective: Learn to find open ports to understand network exposure.
@@ -29,6 +29,7 @@ Nmap scan report for localhost (127.0.0.1)
 PORT   STATE SERVICE
 53/tcp open  domain
 ```
+![Nmap Scan](screenshot_20260827-163710.jpg)
 
 **3. Python Scan using Pydroid 3**
 ```python
